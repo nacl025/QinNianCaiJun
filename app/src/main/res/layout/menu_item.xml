@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_weight="6"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp">
+
+        <ImageView
+            android:id="@+id/food_imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#dcdcdc"
+            android:src="@drawable/default_food" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sellout_imageView"
+            android:src="@drawable/sellout"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:layout_weight="4"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/foodname_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="鱼香肉丝+西芹番茄炒菜花"
+            android:textColor="#000000"
+            android:textSize="14dp"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/special_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/foodname_textview"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/setbar_bg"
+            android:paddingBottom="1dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:paddingTop="1dp"
+            android:text="特"
+            android:textColor="#bb0000"
+            android:visibility="gone"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/price_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/special_textView"
+            android:layout_marginTop="5dp"
+
+            android:text="￥18.00"
+            android:textColor="#ff0000"
+            android:textSize="14dp" />
+
+        <RelativeLayout
+            android:id="@+id/prime_price_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/price_textview"
+            android:layout_alignTop="@+id/price_textview"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/price_textview"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/prime_price_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="￥18.00"
+                android:textColor="#000000"
+                android:textSize="11dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/prime_price_textView"
+                android:layout_alignTop="@+id/prime_price_textView"
+                android:scaleType="centerCrop"
+                android:src="@drawable/line" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/addflag_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/add_imageview"
+            android:layout_alignEnd="@+id/add_imageview"
+            android:layout_marginRight="3dp"
+            android:text="+1"
+            android:textSize="14dp"
+            android:textColor="#ff0000"
+            android:textStyle="bold"
+            android:layout_marginBottom="-3dp"
+            android:visibility="invisible" />
+
+        <com.edmund.qingniancaijun.Control.ClickImageView
+            android:id="@+id/add_imageview"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:padding="3dp"
+            android:src="@drawable/shopping_cart"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="5dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

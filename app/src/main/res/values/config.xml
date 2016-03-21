@@ -1,0 +1,28 @@
+<resources>
+    <string-array name = "category_name" >
+        <item >新人专区</item >
+        <item >冬季温补</item >
+        <item >新品推荐</item >
+        <item >福利专享</item >
+        <item >素菜</item >
+        <item >荤菜</item >
+        <item >肉菜</item >
+        <item >汤羹</item >
+        <item >一城一面</item >
+        <item >酱心小菜</item >
+        <item >火锅系列</item >
+    </string-array >
+    <string-array name = "category_id" >
+        <item >1001</item >
+        <item >1002</item >
+        <item >1003</item >
+        <item >1004</item >
+        <item >1005</item >
+        <item >1006</item >
+        <item >1007</item >
+        <item >1008</item >
+        <item >1009</item >
+        <item >1010</item >
+        <item >1011</item >
+    </string-array >
+</resources>
